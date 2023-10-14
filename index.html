@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Vollkorn font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+    
+    <link href="styling.css" rel="stylesheet">
+
+    <title>Stopwatch</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Title -->
+      <div id="header">Stopwatch</div>
+    
+      <!-- Lap Time -->
+      <div id="lap"><span id="lapminute">00</span>:<span id="lapsecond">00</span>:<span id="lapcentisecond">00</span></div>
+
+      <!-- Time -->
+      <div id="time"><span id="timeminute">00</span>:<span id="timesecond">00</span>:<span id="timecentisecond">00</span></div>
+
+      <!-- Control Buttons -->
+      <div id="controlsContainer" class="row">
+        <div class="col-xs-2 col-xs-offset-4">
+          <div id="startButton" class="control">Start</div>
+          <div id="stopButton" class="control">Stop</div>
+          <div id="resumeButton" class="control">Resume</div>
+        </div>
+
+        <div class="col-xs-2">
+          <div id="lapButton" class="control">Lap</div>
+          <div id="resetButton" class="control">Reset</div>
+        </div>
+      </div>
+
+      <!--  -->
+      <div id="laps">
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap js dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/stopwatch.js"></script>
+  </body>
+</html>
